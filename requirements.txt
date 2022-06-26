@@ -1,0 +1,7 @@
+beautifulsoup4
+requests
+tabula-py
+pandas
+skimpy
+unidecode
+ipykernel
