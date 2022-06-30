@@ -59,6 +59,9 @@ class Wrangling():
         nan_value = float("NaN")
         data.replace("", nan_value, inplace=True)
         data.dropna(subset = ['decolagem_h_local', 'origem', 'destino'], inplace=True)
+        # save what is inside parenthesis in separate column:
+        data["observation_origem"] = data["origem"].str.extract('.*\((.*)\).*')
+        data["observation_destino"] = data["destino"].str.extract('.*\((.*)\).*')
 
         # groom columns destino and origem
         cols_clean = ['origem', 'destino']
