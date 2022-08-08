@@ -5,3 +5,13 @@ pandas
 skimpy
 unidecode
 ipykernel
+geopandas
+fiona
+pyproj
+rtree 
+shapely == 1.7.1
+matplotlib
+cartopy
+scipy
+folium
+plotly
